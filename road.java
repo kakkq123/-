@@ -35,7 +35,7 @@ public class road {
 		}
 
 		System.out.println("");
-		System.out.printf("총 가지수 : %d", road[4][4]);
+		System.out.printf("총 %d", road[4][4]);
 
 	}
 
