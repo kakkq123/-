@@ -1,8 +1,8 @@
 /*
  * https://www.youtube.com/watch?v=LQ3JHknGy8c
- * 영상을 참고하여 JAVA로 크루스칼 알고리즘을 구현하였다.
- */
- 
+ * 영상을 참고하여 크루스칼 알고리즘을 구현하였다.
+ * */
+
 import java.util.*;
 
 class Edge {
@@ -26,26 +26,26 @@ class AscendingObj implements Comparator<Edge> {
 	}
 }
 
-public class kru {
+public class di {
 	//union_find
-	public static int getParent(int[] parent, int x) {
-		if (parent[x] == x)
-			return x;
-		return parent[x] = getParent(parent, parent[x]);
+	public static int getParent(int[] set, int k) {
+		if (set[k] == k)
+			return k;
+		return set[k] = getParent(set, set[k]);
 	}
 	
-	public static void unionParent(int[] parent, int a, int b) {
-		a = getParent(parent, a);
-		b = getParent(parent, b);
+	public static void unionSet(int[] set, int a, int b) {
+		a = getParent(set, a);
+		b = getParent(set, b);
 		if (a < b)
-			parent[b] = a;
+			set[b] = a;
 		else
-			parent[a] = b;
+			set[a] = b;
 	}
 	
-	public static boolean findParent(int[] parent, int a, int b) {
-		a = getParent(parent, a);
-		b = getParent(parent, b);
+	public static boolean findParent(int[] set, int a, int b) {
+		a = getParent(set, a);
+		b = getParent(set, b);
 		if (a == b)
 			return true;
 		else
@@ -75,7 +75,7 @@ public class kru {
 			// 사이클이 발생하지 않으면 추가
 			if (!findParent(table, e.get(i).a - 1, e.get(i).b - 1)) {
 				sum += e.get(i).getDistance();
-				unionParent(table, e.get(i).a - 1, e.get(i).b - 1);
+				unionSet(table, e.get(i).a - 1, e.get(i).b - 1);
 			}
 		}
 		System.out.printf("%d",sum);
