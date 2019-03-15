@@ -33,7 +33,7 @@ public class kru {
 			return x;
 		return parent[x] = getParent(parent, parent[x]);
 	}
-	//합치기
+	
 	public static void unionParent(int[] parent, int a, int b) {
 		a = getParent(parent, a);
 		b = getParent(parent, b);
@@ -42,7 +42,7 @@ public class kru {
 		else
 			parent[a] = b;
 	}
-	//같은 집합인지 확인
+	
 	public static boolean findParent(int[] parent, int a, int b) {
 		a = getParent(parent, a);
 		b = getParent(parent, b);
