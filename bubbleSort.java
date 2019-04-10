@@ -5,7 +5,7 @@ public class bubbleSort {
 	public static void main(String[] args) {
 		int [] array = {8,5,6,2,4};
 		int i,j,temp;
-		int n=array.length; //배열의 길이
+		int n=array.length; 
 		//sort
 		for(i=n-1;i>0;i--) 
 			for(j=0;j<i;j++) 
