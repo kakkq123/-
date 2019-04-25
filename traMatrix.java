@@ -1,30 +1,29 @@
-
 import java.util.*;
 
+//ì „ì¹˜í–‰ë ¬
+
 public class traMatrix {
-	/*
-	 * ÀüÄ¡ Çà·Ä ¸¸µé±â
-	 */
+
 
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
-		System.out.println("ÇàÀÇ Å©±â¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.println("í–‰ì˜ í¬ê¸°ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		int row = kb.nextInt();
-		System.out.println("¿­ÀÇ Å©±â¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.println("ì—´ì˜ í¬ê¸°ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		int col = kb.nextInt();
 		int temp;
 		int[][] a = new int[row][col];
 		int[][] at = new int[row][col];
 
-		// ÀÔ·Â
-		System.out.println("Â÷·Ê´ë·Î ¿ø¼Ò°ªÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+		// ì…ë ¥
+		System.out.println("ì°¨ë¡€ëŒ€ë¡œ ì›ì†Œê°’ì„ ì…ë ¥í•˜ì„¸ìš”");
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < col; j++) {
 				a[i][j] = kb.nextInt();
 			}
 		}
-		System.out.println("\n*************°á°ú*************\n");
-		// ÀüÄ¡Çà·Ä Ãâ·Â~
+		System.out.println("\n*************ê²°ê³¼*************\n");
+		// ì „ì¹˜í–‰ë ¬ ì¶œë ¥~
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < col; j++) {
 				at[i][j] = a[j][i];
