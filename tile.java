@@ -1,4 +1,4 @@
-//n*mì˜ íƒ€ì¼ í…Œë‘ë¦¬ë¥¼ p*1íƒ€ì¼ë¡œ ë®ì„ ë•Œ ê°€ëŠ¥í•œ pê°’ì„ ëª¨ë‘ ì¶œë ¥
+//n*mÀÇ Å¸ÀÏ Å×µÎ¸®¸¦ p*1Å¸ÀÏ·Î µ¤À» ¶§ °¡´ÉÇÑ p°ªÀ» ¸ðµÎ Ãâ·Â
 
 import java.util.Scanner;
 
@@ -7,10 +7,10 @@ public class tile {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 		int i, left, max_p,p=1;;
-		int n = kb.nextInt(); // ê°€ë¡œ
-		int m = kb.nextInt(); // ì„¸ë¡œ
+		int n = kb.nextInt(); // °¡·Î
+		int m = kb.nextInt(); // ¼¼·Î
 
-		//ë§Œì•½ ì„¸ë¡œê°€ ê°€ë¡œë³´ë‹¤ ê¸¸ë‹¤ë©´ ë°”ê¿”ì¤Œ
+		//¸¸¾à ¼¼·Î°¡ °¡·Îº¸´Ù ±æ´Ù¸é ¹Ù²ãÁÜ
 		if(m>n){
 			int temp=n;
 			n=m;
@@ -19,7 +19,7 @@ public class tile {
 		max_p=m-2;
 		
 		while (p<=max_p) {
-			// ê°€ë¡œ ì™¼->ì˜¤
+			// °¡·Î ¿Þ->¿À
 			i = n % p;
 			if (i == 0)
 				left = 1;
@@ -30,7 +30,7 @@ public class tile {
 				continue;
 			}
 
-			// ì„¸ë¡œ ìœ„->ì•„ëž˜
+			// ¼¼·Î À§->¾Æ·¡
 			i = (m - left) % p;
 			if (i == 0)
 				left = 1;
@@ -40,7 +40,7 @@ public class tile {
 				p++;
 				continue;
 			}
-			// ê°€ë¡œ ì˜¤->ì™¼
+			// °¡·Î ¿À->¿Þ
 			i = (n-left) % p;
 			if (i == 0)
 				left = 1;
@@ -51,14 +51,14 @@ public class tile {
 				continue;
 			}
 
-			// ì„¸ë¡œ ì•„ëž˜->ìœ„
+			// ¼¼·Î ¾Æ·¡->À§
 			i = (m - left - 1) % p;
 			if (i == 0)
 				System.out.printf("%d ", p);
 
 			p++;
 
-		} 
+		} // end of while
 
 	}
 
