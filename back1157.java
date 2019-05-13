@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class back1157 {
+public class baek1157 {
 
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 		int[] alphabet = new int[26];
 
 		String str = kb.nextLine();
-		str = str.toLowerCase(); // ¼Ò¹®ÀÚ·Î º¯È¯
-		char[] c = str.toCharArray(); // char ¹è¿­·Î º¯È¯
+		str = str.toLowerCase(); // ì†Œë¬¸ìë¡œ ë³€í™˜
+		char[] c = str.toCharArray(); // char ë°°ì—´ë¡œ ë³€í™˜
 
 		for (int i = 0; i < c.length; i++) {
 			alphabet[c[i] - 97]++;
@@ -32,7 +32,7 @@ public class back1157 {
 		if (max == max2)
 			System.out.println("?");
 		else
-			System.out.printf("%c", index + 65); // ´ë¹®ÀÚ·Î Ãâ·Â
+			System.out.printf("%c", index + 65); // ëŒ€ë¬¸ìë¡œ ì¶œë ¥
 	}
 
 }
