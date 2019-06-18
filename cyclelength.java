@@ -7,7 +7,6 @@ public class cyclelength {
 		int length=1;
 		
 		while(n!=1) {
-			//Â¦¼ö¶ó¸é
 			if(n%2==0)
 				n=n/2;
 			else
