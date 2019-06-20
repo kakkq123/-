@@ -9,7 +9,6 @@ public class baek1912{
 		int[] dp = new int[n];
 		int tmp;
 
-		// 입력
 		for (int i = 0; i < n; i++)
 			num[i] = kb.nextInt();
 
@@ -25,7 +24,7 @@ public class baek1912{
 			if(max<dp[i])
 				max=dp[i];
 		}
-		//출력
+	
 		System.out.printf("%d", max);
 
 	}
