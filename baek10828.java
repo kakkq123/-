@@ -3,7 +3,7 @@ public class baek10828 {
 
 	static int index=-1;
 	static int[] stack=new int[10000];
-	static String ans="";
+	
 	public static void push(int n) {
 		index++;
 		stack[index]=n;
@@ -11,27 +11,26 @@ public class baek10828 {
 	
 	public static int pop() {
 		if(index<0) {
-			ans+="-1\n";
+			System.out.println("-1");
 			return 0;
 		}
-		ans+=stack[index]+"\n";
+		System.out.printf("%d\n", stack[index]);
 		index--;
 		return 1;
 	}
 	
 	public static void isEmpty() {
 		if(index>=0)
-			ans+="0\n";
+			System.out.println("0");
 		else
-			ans+="1\n";
-
+			System.out.println("-1");
 	}
 	
 	public static void top() {
 		if(index<0)
-			ans+="-1\n";
+			System.out.println("-1");
 		else
-			ans+=stack[index]+"\n";
+			System.out.printf("%d\n", stack[index]);
 
 	}
 	
@@ -48,14 +47,14 @@ public class baek10828 {
 			else if(s[0].equals("top"))
 				top();
 			else if(s[0].equals("size"))
-				ans+=index+1+"\n";
+				System.out.printf("%d\n", index+1);
 			else if(s[0].equals("empty"))
 				isEmpty();
 			else if(s[0].equals("pop"))
 				pop();
 
 		}
-		System.out.printf("%s", ans);
+		
 	}
 
 }
