@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Solution {
-
+	//최빈값 
 	public static void main(String[] args) {
 		Scanner kb =new Scanner(System.in);
 		int test=kb.nextInt(); //테스트 개수
