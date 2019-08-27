@@ -37,24 +37,16 @@ public class beak_3190 {
 		while (true) {
 			curtime++;
 			switch (d) {
-			case 0:
-				col++;
-				break; // ¿À¸¥ÂÊ
-			case 1:
-				row++;
-				break; // ¾Æ·¡
-			case 2:
-				col--;
-				break; // ¿ÞÂÊ
-			case 3:
-				row--;
-				break; // À§
+			case 0:	col++;	break; 
+			case 1:	row++;	break; 
+			case 2:	col--;	break; 
+			case 3:	row--;	break;
 			}
 
 			if (row == 0 || col == 0 || col == n + 1 || row == n + 1 || board[row][col] == 2) {
 				break;
 			}
-			// »ç°ú
+			// Â»Ã§Â°Ãº
 			if (board[row][col] == 1) {
 				board[row][col] = 2; //
 				s.offer(new Snake(row, col));
