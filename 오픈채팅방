@@ -1,0 +1,45 @@
+import java.util.HashMap;
+import java.util.Map;
+
+class Solution {
+    public String[] solution(String[] record) {
+        String[] answer;
+        
+        Map<String, String> m= new HashMap<String, String>();
+       
+        int cnt=0;
+		
+		for(int i=0; i<record.length; i++) {
+			String s=record[i];
+			String[] st=s.split(" ");
+			//ENTER
+			if(st[0].equals("Enter")) {
+				m.put(st[1], st[2]);
+				cnt++;
+			}
+			//LEAVE
+			else if(st[0].equals("Leave")) {
+				cnt++;
+			}
+			//CHANGE
+			else if(st[0].equals("Change")) {
+				m.put(st[1], st[2]);
+			}
+			
+		}//while	
+		int index=0;
+		answer=new String[cnt];
+		for(int i=0; i<record.length; i++){
+			String[] st=record[i].split(" ");
+			if(st[0].equals("Enter")) {
+				answer[index]=m.get(st[1])+"님이 들어왔습니다.";
+				index++;
+			}else if(st[0].equals("Leave")) {
+				answer[index]=m.get(st[1])+"님이 나갔습니다.";
+				index++;
+			}
+		}
+        
+        return answer;
+    }
+}
