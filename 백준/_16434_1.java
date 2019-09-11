@@ -1,7 +1,7 @@
 //백16434.java코드보다 간소화함
 import java.util.Scanner;
 
-public class 백16434_1 {
+public class _16434_1 {
 
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
