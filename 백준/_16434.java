@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class 백16434 {
+public class _16434 {
 
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
