@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class baek10809 {
+public class _10809 {
 
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
@@ -8,16 +8,16 @@ public class baek10809 {
 				-1, -1, -1 };
 
 		String str = kb.nextLine();
-		str = str.toLowerCase(); // ¼Ò¹®ÀÚ·Î º¯È¯
-		char[] c = str.toCharArray(); // char ¹è¿­·Î º¯È¯
+		str = str.toLowerCase(); // ì†Œë¬¸ìë¡œ ë³€í™˜
+		char[] c = str.toCharArray(); // char ë°°ì—´ë¡œ ë³€í™˜
 		
-		//ÀúÀå
+		//ì €ì¥
 		for(int i=0; i<c.length; i++) {
 			if(alphabet[c[i]-97]!=-1)
 				continue;
 			alphabet[c[i]-97]=i;
 		}
-		//Ãâ·Â
+		//ì¶œë ¥
 		for(int i=0; i<alphabet.length; i++) {
 			System.out.printf("%d ",alphabet[i]);
 		}
