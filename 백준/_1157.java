@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class baek1157 {
+public class _1157 {
 
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
