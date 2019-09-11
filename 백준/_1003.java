@@ -1,9 +1,9 @@
 import java.util.Scanner;
-/*ÇÇº¸³ªÄ¡ ÇÔ¼ö°¡ È£ÃâµÉ ¶§ 0°ú 1ÀÌ È£ÃâµÇ´Â °³¼ö¸¦ Ãâ·Â
- * nÀÇ ¼ıÀÚ°¡ ÁÖ¾îÁ³À» ¶§ 0ÀÌ È£ÃâµÇ´Â °³¼ö´Â n-1ÀÇ 0ÀÌ È£ÃâµÇ´Â °³¼ö+ n-2ÀÇ 0ÀÌ È£ÃâµÇ´Â °³¼öÀÌ´Ù. (1µµ ¸¶Âù°¡Áö)
- * µû¶ó¼­ dp[n][0]=dp[n-1][0]+dp[n-2][0]°¡ µÈ´Ù.
+/*í”¼ë³´ë‚˜ì¹˜ í•¨ìˆ˜ê°€ í˜¸ì¶œë  ë•Œ 0ê³¼ 1ì´ í˜¸ì¶œë˜ëŠ” ê°œìˆ˜ë¥¼ ì¶œë ¥
+ * nì˜ ìˆ«ìê°€ ì£¼ì–´ì¡Œì„ ë•Œ 0ì´ í˜¸ì¶œë˜ëŠ” ê°œìˆ˜ëŠ” n-1ì˜ 0ì´ í˜¸ì¶œë˜ëŠ” ê°œìˆ˜+ n-2ì˜ 0ì´ í˜¸ì¶œë˜ëŠ” ê°œìˆ˜ì´ë‹¤. (1ë„ ë§ˆì°¬ê°€ì§€)
+ * ë”°ë¼ì„œ dp[n][0]=dp[n-1][0]+dp[n-2][0]ê°€ ëœë‹¤.
  * */
-public class baek1003 {
+public class _1003 {
 	static int[][] dp = new int[41][2];
 
 	public static int fibo_0(int n) {
@@ -11,7 +11,7 @@ public class baek1003 {
 			return dp[0][0] = 1;
 		else if (n == 1)
 			return dp[1][0] = 0;
-		//Áßº¹ °è»êÀ» ¹æÁö
+		//ì¤‘ë³µ ê³„ì‚°ì„ ë°©ì§€
 		if (dp[n][0] != 0)
 			return dp[n][0];
 		return dp[n][0] = fibo_0(n - 1) + fibo_0(n - 2);
@@ -22,7 +22,7 @@ public class baek1003 {
 			return dp[0][1] = 0;
 		else if (n == 1)
 			return dp[1][1] = 1;
-		//Áßº¹ °è»êÀ» ¹æÁö
+		//ì¤‘ë³µ ê³„ì‚°ì„ ë°©ì§€
 		if (dp[n][1] != 0)
 			return dp[n][1];
 		return dp[n][1] = fibo_1(n - 1) + fibo_1(n - 2);
@@ -30,7 +30,7 @@ public class baek1003 {
 
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
-		int t = kb.nextInt(); //testÇÒ °³¼ö
+		int t = kb.nextInt(); //testí•  ê°œìˆ˜
 		int n[] = new int[t];
 		for (int i = 0; i < t; i++) {
 			n[i] = kb.nextInt();
