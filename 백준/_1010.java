@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class baek1010 {
+public class _1010 {
 	static int[][] dp = new int[31][31];
 
 	public static int bridge_dp(int a, int b) {
