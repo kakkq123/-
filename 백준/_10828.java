@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class baek10828 {
+public class _10828 {
 
 	static int index=-1;
 	static int[] stack=new int[10000];
