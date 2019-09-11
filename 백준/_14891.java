@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class samsungPro1 {
+public class _14891 {
 
 	// 반시계방향 회전
 	static public void left_rotate(int[] arr) {
