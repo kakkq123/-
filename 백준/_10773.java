@@ -1,11 +1,11 @@
 /*
-0À» ÀÔ·Â¹ŞÀ¸¸é pop
-0ÀÌ ¾Æ´Ñ Á¤¼ö´Â stack¿¡ pushÇÑ´Ù.
-ÀÔ·ÂÀÌ ³¡³ª¸é stack¿¡ Á¸ÀçÇÏ´Â ¸ğµç Á¤¼öÀÇ ÇÕÀ» ´õÇÏ¿© Ãâ·ÂÇÑ´Ù.
+0ì„ ì…ë ¥ë°›ìœ¼ë©´ pop
+0ì´ ì•„ë‹Œ ì •ìˆ˜ëŠ” stackì— pushí•œë‹¤.
+ì…ë ¥ì´ ëë‚˜ë©´ stackì— ì¡´ì¬í•˜ëŠ” ëª¨ë“  ì •ìˆ˜ì˜ í•©ì„ ë”í•˜ì—¬ ì¶œë ¥í•œë‹¤.
 */
 import java.util.Scanner;
 
-public class baek10773 {
+public class _10773 {
 	static int index = -1;
 	static int[] stack = new int[100000];
 	static int sum=0;
