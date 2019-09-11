@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class baek1149 {
+public class _1149 {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
@@ -13,11 +13,11 @@ public class baek1149 {
 		
 		for (int i = 0; i <n; i++) {
 			for (int j = 0; j < 3; j++) {
-				//Ã¹¹øÂ° ÁýÀÌ¸é dp¿¡ °¢ rgb°ªÀ» ÀúÀåÇÑ´Ù.
+				//ì²«ë²ˆì§¸ ì§‘ì´ë©´ dpì— ê° rgbê°’ì„ ì €ìž¥í•œë‹¤.
 				if (i == 0)
 					dp[i][j] = rgb[i][j];
 				else {
-					/*¸¸¾à j=aÀÌ¸é ¿·ÁýÀº a°¡ ¾Æ´Ñ »öÀ¸·Î ÆäÀÎÆÃÀÌ µÇ¾îÀÖ¾î¾ßÇÑ´Ù. 
+					/*ë§Œì•½ j=aì´ë©´ ì˜†ì§‘ì€ aê°€ ì•„ë‹Œ ìƒ‰ìœ¼ë¡œ íŽ˜ì¸íŒ…ì´ ë˜ì–´ìžˆì–´ì•¼í•œë‹¤. 
 					 * dp[i][0]=rgb[i][0] + Math.min(dp[i - 1][1], dp[i - 1][2]);
 					 * dp[i][1]=rgb[i][1] + Math.min(dp[i - 1][0], dp[i - 1][2]);
 					 * dp[i][2]=rgb[i][2] + Math.min(dp[i - 1][0], dp[i - 1][1]);
@@ -33,7 +33,7 @@ public class baek1149 {
 			} // j
 		} // i
 
-		//¸¶Áö¸· dp°ª Áß¿¡ ÃÖ¼Ú°ªÀ» Ãâ·ÂÇÑ´Ù.
+		//ë§ˆì§€ë§‰ dpê°’ ì¤‘ì— ìµœì†Ÿê°’ì„ ì¶œë ¥í•œë‹¤.
 		System.out.println(Math.min(dp[n-1][0], Math.min(dp[n-1][1], dp[n-1][2])));
 	}
 
