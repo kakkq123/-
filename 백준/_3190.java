@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class beak_3190 {
+public class _3190 {
 	static int[][] board;
 
 	static class Condition {
