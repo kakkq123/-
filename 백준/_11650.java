@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class baek11650 {
+public class _11650 {
 	public static class Point {
 		private int x;
 		private int y;
@@ -37,11 +37,11 @@ public class baek11650 {
 		int n = kb.nextInt();
 		ArrayList<Point> p = new ArrayList<Point>();
 
-		// ÀÔ·Â
+		// Ã€Ã”Â·Ã‚
 		for (int i = 0; i < n; i++) {
 			p.add(new Point(kb.nextInt(), kb.nextInt()));
 		}
-		// ¿À¸§Â÷¼øÀ¸·Î Á¤·Ä
+		// Â¿Ã€Â¸Â§Ã‚Ã·Â¼Ã¸Ã€Â¸Â·ÃŽ ÃÂ¤Â·Ã„
 		Ascending a = new Ascending();
 		Collections.sort(p, a);
 
