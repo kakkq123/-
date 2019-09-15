@@ -37,11 +37,11 @@ public class _11650 {
 		int n = kb.nextInt();
 		ArrayList<Point> p = new ArrayList<Point>();
 
-		// ÀÔ·Â
+		// 
 		for (int i = 0; i < n; i++) {
 			p.add(new Point(kb.nextInt(), kb.nextInt()));
 		}
-		// ¿À¸§Â÷¼øÀ¸·Î Á¤·Ä
+		// 
 		Ascending a = new Ascending();
 		Collections.sort(p, a);
 
