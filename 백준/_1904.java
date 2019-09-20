@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class baek1904 {
+public class _1904 {
 	static int[] dp=new int[1000001];
 	public static int tile(int n) {
 		if(n==1)
