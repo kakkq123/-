@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class baek1932 {
+public class _1932 {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
@@ -17,7 +17,7 @@ public class baek1932 {
 					dp[i][j] = triangle[i][j] + dp[i - 1][j];
 				} else
 					dp[i][j] = triangle[i][j] + Math.max(dp[i - 1][j - 1], dp[i - 1][j]);
-				// ÃÖ´ñ°ªº¸´Ù Å©¸é max°ª º¯°æ
+				// ÃƒÃ–Â´Ã±Â°ÂªÂºÂ¸Â´Ã™ Ã…Â©Â¸Ã© maxÂ°Âª ÂºÂ¯Â°Ã¦
 				if (dp[i][j] > max)
 					max = dp[i][j];
 			}
