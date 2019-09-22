@@ -29,7 +29,7 @@ public class _14503 {
 		int c = Integer.parseInt(st.nextToken());
 		int d = Integer.parseInt(st.nextToken());
 		int num=0;
-		// 0 ºÏ , 1 µ¿, 2 ³², 3¼­
+		// 0 ë¶ , 1 ë™, 2 ë‚¨, 3ì„œ
 		for (int i = 0; i < n; i++) {
 			st = new StringTokenizer(br.readLine());
 			for (int j = 0; j < m; j++) {
