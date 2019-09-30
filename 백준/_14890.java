@@ -25,7 +25,7 @@ public class _14890 {
 			if (!isrange(r, c) || t != map[r][c] || slope[r][c])
 				return false;
 
-			slope[r][c] = true; // 경사로
+			slope[r][c] = true; 
 
 		}
 		return true;
@@ -37,7 +37,7 @@ public class _14890 {
 			if (!isrange(r, c) || t != map[r][c] || slope[r][c])
 				return false;
 
-			slope[r][c] = true; // 경사로
+			slope[r][c] = true; 
 			r += dr[d];
 			c += dc[d];
 		}
