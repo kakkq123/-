@@ -8,9 +8,8 @@ public class _15683 {
 	static int[][] office;
 	static int[] dr = { -1, 0, 1, 0 }, dc = { 0, 1, 0, -1 }, rotation = { 0, 4, 2, 4, 4, 1 }, t = new int[8];
 	static int[][] arr = new int[8][2];
-	static Stack<Pos> cctv = new Stack<Pos>();
-
-	public static class Pos implements Comparable<Pos> {
+	
+	public static class Pos{
 		int x, y;
 
 		public Pos(int x, int y) {
