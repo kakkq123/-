@@ -83,7 +83,7 @@ public class _15683 {
 		}
 	}
 
-	public static void bfs(int index) {
+	public static void dfs(int index) {
 		if (index == size) {
 			blind_spot();
 			return;
@@ -92,7 +92,7 @@ public class _15683 {
 
 		for (int i = 0; i < rotation[num]; i++) {
 			t[index] = i;
-			bfs(index + 1);
+			dfs(index + 1);
 		}
 	}
 
@@ -116,7 +116,7 @@ public class _15683 {
 				}
 			}
 		}
-		bfs(0);
+		dfs(0);
 		System.out.println(min);
 		br.close();
 	}
