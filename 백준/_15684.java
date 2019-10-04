@@ -37,7 +37,7 @@ public class _15684 {
 			return;
 		}
 		for (int i = row; i <= r; i++) {
-			int k = (r < r && i == r ? col : 1);
+			int k = (i < r && i == r ? col : 1);
 			for (int j = k; j < c; j++) {
 				if (ladder[i][j] || (j > 1 && ladder[i][j - 1]) || (j < c - 1 && ladder[i][j + 1]))
 					continue;
@@ -45,8 +45,8 @@ public class _15684 {
 				ladder[i][j] = true;
 				dfs(i, j, plus_line + 1);
 				ladder[i][j] = false;
-			} // for j
-		} // for i
+			} 
+		} 
 	}
 
 	public static void main(String[] args) throws Exception {
