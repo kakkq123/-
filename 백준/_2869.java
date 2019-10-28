@@ -17,6 +17,8 @@ public class _2869 {
 		answer= (double)(v-a)%(a-b)==0? answer+1 : answer+2;
 		
 		System.out.println(Math.round(answer));
+		
+		br.close();
 	}
 
 }
