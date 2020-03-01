@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.util.LinkedList;
 
-public class ½ºµµÄí_2580 {
+public class ìŠ¤ë„ì¿ _2580 {
 	static int[][] a = new int[9][9];
 	static LinkedList<Pos> list = new LinkedList<Pos>();
 
