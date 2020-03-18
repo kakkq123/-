@@ -35,7 +35,6 @@ public class 좌표정렬하기_11650 {
 			int x = q.peek().x, y = q.peek().y;
 			q.poll();
 			bw.write(x+" "+y+"\n");
-			bw.flush();
 		}	
 		bw.close();
 	}
