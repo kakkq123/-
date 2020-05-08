@@ -1,0 +1,23 @@
+import java.util.*;
+
+class Solution {
+	static HashMap<Long, Long> h = new HashMap<Long, Long>();
+
+	public long find(long num) {
+		if (!h.containsKey(num)) {
+			h.put(num, num + 1);
+			return num;
+		}
+		h.put(num, find(h.get(num))); // 업데이트 필수! (시간 효율성 고려)
+		return h.get(num);
+	}
+
+	public long[] solution(long k, long[] room_number) {
+		long[] answer = new long[room_number.length];
+		int index = 0;
+		for (int i = 0; i < room_number.length; i++) {
+			answer[index++] = find(room_number[i]);
+		}
+		return answer;
+	}
+}
