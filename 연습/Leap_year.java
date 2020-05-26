@@ -4,7 +4,7 @@ public class Leap_year {
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.printf("¿¬µµ¸¦ ¾çÀÇ Á¤¼ö·Î ÀÔ·ÂÇÏ½Ã¿À : ");
+		System.out.printf("ì—°ë„ë¥¼ ì–‘ì˜ ì •ìˆ˜ë¡œ ì…ë ¥í•˜ì‹œì˜¤ : ");
 		int year=Integer.parseInt(br.readLine());
 		
 		boolean isLeapYear=false;
@@ -13,9 +13,9 @@ public class Leap_year {
 			isLeapYear=true;
 		
 		if(isLeapYear)
-			System.out.printf("%d³âÀº À±³âÀÔ´Ï´Ù.",year);
+			System.out.printf("%dë…„ì€ ìœ¤ë…„ì…ë‹ˆë‹¤.",year);
 		else
-			System.out.printf("%d³âÀº À±³âÀÌ ¾Æ´Õ´Ï´Ù.",year);
+			System.out.printf("%dë…„ì€ ìœ¤ë…„ì´ ì•„ë‹™ë‹ˆë‹¤.",year);
 		
 		br.close();
 	}
