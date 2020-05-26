@@ -2,19 +2,19 @@ import java.util.Scanner;
 public class ant {
 
 	public static int[] check(int[][] array, int num) {
-		//»ç¿ëÀÚ´Â 1¹ø À§Ä¡¿¡ ÀÖ´Ù´Â °¡Á¤
+		//ì‚¬ìš©ìëŠ” 1ë²ˆ ìœ„ì¹˜ì— ìˆë‹¤ëŠ” ê°€ì •
 		int i,j;
 		int[] ans =new int[2];
 		for(i=0;i<5;i++) {
 			for(j=0;j<5;j++) {
 				if(num==array[i][j]) {
-					ans[0]=j+1; //°¡·Î Ä­¼ö
-					ans[1]=5-i; //¼¼·Î Ä­¼ö
+					ans[0]=j+1; //ê°€ë¡œ ì¹¸ìˆ˜
+					ans[1]=5-i; //ì„¸ë¡œ ì¹¸ìˆ˜
 					return ans; 
 				}
 			}
 		}
-		return ans; //¾øÀ¸¸é 0
+		return ans; //ì—†ìœ¼ë©´ 0
 	}
 	public static void main(String[] args) {
 		Scanner kb =new Scanner(System.in);
@@ -25,19 +25,19 @@ public class ant {
 						{2,3,6,15,18},
 						{1,4,5,16,17}};
 		
-		System.out.println("ÀÔ·Â ¹ŞÀ» °³¼ö");
+		System.out.println("ì…ë ¥ ë°›ì„ ê°œìˆ˜");
 		int k =kb.nextInt();
-		int[][] res=new int[k][2]; //°¡·Î,¼¼·Î Ä­¼ö Ãâ·ÂÇÒ ¹è¿­
+		int[][] res=new int[k][2]; //ê°€ë¡œ,ì„¸ë¡œ ì¹¸ìˆ˜ ì¶œë ¥í•  ë°°ì—´
 		
-		System.out.printf("Ã¼½º ¹øÈ£ %d°³ ÀÔ·ÂÇÏ¼¼¿ä\n",k);
+		System.out.printf("ì²´ìŠ¤ ë²ˆí˜¸ %dê°œ ì…ë ¥í•˜ì„¸ìš”\n",k);
 		for(int i=0; i<k; i++) {
-			a=kb.nextInt(); //Ã¼½ºÆÇ ¹øÈ£ ÀÔ·Â
-			res[i]=check(chess,a); // Ã¼½ºÆÇ ¹øÈ£¿¡ µµ´ŞÇÏ±â À§ÇÑ °¡·Î, ¼¼·Î Ä­¼ö
+			a=kb.nextInt(); //ì²´ìŠ¤íŒ ë²ˆí˜¸ ì…ë ¥
+			res[i]=check(chess,a); // ì²´ìŠ¤íŒ ë²ˆí˜¸ì— ë„ë‹¬í•˜ê¸° ìœ„í•œ ê°€ë¡œ, ì„¸ë¡œ ì¹¸ìˆ˜
 			
 		}
 
-		//Ãâ·Â
-		System.out.println("\n***°á°ú***");
+		//ì¶œë ¥
+		System.out.println("\n***ê²°ê³¼***");
 		for(int i=0; i<k; i++) 
 			System.out.printf("%d %d \n", res[i][0],res[i][1]);
 		
