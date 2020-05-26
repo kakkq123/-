@@ -1,6 +1,6 @@
 
 /*
- * ´ÙÀåÁ¶ ÀÔ·Â¹Ş¾Æ ascending, descending, mixed¸¦ ÆÇº°ÇÏ½Ã¿À
+ * ë‹¤ì¥ì¡° ì…ë ¥ë°›ì•„ ascending, descending, mixedë¥¼ íŒë³„í•˜ì‹œì˜¤
  * */
 
 import java.util.Scanner;
