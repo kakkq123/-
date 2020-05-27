@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class baek2748 {
-	//nÀÌ ¾î´ÀÁ¤µµ Ä¿Áö¸é ÇÇº¸³ªÄ¡ ¼ıÀÚµµ Ä¿Áö±â ¶§¹®¿¡ 8BÅ©±â¸¦ °®´Â long typeÀ¸·Î ÇØÁà¾ß ¼ıÀÚ°¡ ¾È Â©¸°´Ù
+	//nì´ ì–´ëŠì •ë„ ì»¤ì§€ë©´ í”¼ë³´ë‚˜ì¹˜ ìˆ«ìë„ ì»¤ì§€ê¸° ë•Œë¬¸ì— 8Bí¬ê¸°ë¥¼ ê°–ëŠ” long typeìœ¼ë¡œ í•´ì¤˜ì•¼ ìˆ«ìê°€ ì•ˆ ì§¤ë¦°ë‹¤
 	static long[] dp=new long[10000];
 	
 	public static long fibo(int n) {
