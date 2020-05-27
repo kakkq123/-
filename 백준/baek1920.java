@@ -21,7 +21,7 @@ public class baek1920 {
 		for(int i=0; i<n; i++)
 			arr[i]=kb.nextInt();
 		
-		Arrays.sort(arr);//Á¤·Ä
+		Arrays.sort(arr);//ÃÂ¤Â·Ã„
 		
 		
 		int m=kb.nextInt();
