@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class DFS¿ÍBFS_1260 {
+public class DFSÂ¿ÃBFS_1260 {
 	static int N;
 	static boolean[][] a;
 	static Queue<Integer> bfs_store = new LinkedList<Integer>();
