@@ -15,7 +15,6 @@ public class Main {
 			int M = Integer.parseInt(st.nextToken()); //가차 타는 사람의 수
 			cnt -= N;
 			cnt += M;
-      //현재 승객이 
 			max = Math.max(cnt, max);
 		}
 
